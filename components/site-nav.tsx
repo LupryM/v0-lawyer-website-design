@@ -2,13 +2,12 @@ import Link from "next/link"
 import { Scale } from "lucide-react"
 
 const navItems = [
-  { label: "Home", href: "#" },
-  { label: "About", href: "#" },
-  { label: "Prices", href: "#" },
-  { label: "Services", href: "#" },
-  { label: "Shop", href: "#" },
-  { label: "Blog", href: "#" },
-  { label: "Contact", href: "#" },
+  { label: "Home", href: "/" },
+  { label: "About", href: "/about" },
+  { label: "Services", href: "/services" },
+  { label: "Our Team", href: "/team" },
+  { label: "Blog", href: "/blog" },
+  { label: "Contact", href: "/contact" },
 ]
 
 export function SiteNav() {
@@ -18,7 +17,7 @@ export function SiteNav() {
         <Link href="/" className="flex items-center gap-2 group">
           <Scale className="h-5 w-5 text-tan" aria-hidden />
           <span className="font-serif text-xl tracking-wide text-dark-bg">
-            Ashcroft
+            MN Attorneys
           </span>
         </Link>
 
@@ -38,10 +37,10 @@ export function SiteNav() {
         </nav>
 
         <Link
-          href="#contact"
+          href="/contact"
           className="inline-flex items-center justify-center px-7 py-3 bg-tan text-white text-[11px] tracking-[0.22em] uppercase hover:bg-dark-bg transition-colors"
         >
-          Get Started
+          Free Consultation
         </Link>
       </div>
     </header>
